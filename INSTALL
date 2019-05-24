@@ -1,3 +1,5 @@
 Для сборки программы CrossedLine необходимо установить Java SE Development Kit 8u202 который доступен по ссылке https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+Запустить скрипт build.bat
 
 Для запуска программы CrossedLine необходимо установить Java SE Runtime Environment 8u202 который доступен по ссылке https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
+Запустить скрипт CrossedLines.bat
