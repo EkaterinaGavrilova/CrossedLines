@@ -1,6 +1,1 @@
-out/
-production/
-CrossedLines/
-org/*.class
-out/production/CrossedLines/org/*.class
-/out/production/CrossedLines/org/*.class
+/out/
