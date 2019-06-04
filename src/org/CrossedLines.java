@@ -128,7 +128,7 @@ public class CrossedLines extends JComponent{
         JFrame Window = new JFrame("CrossedLines");
         Window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         final CrossedLines CL = new CrossedLines();
-        CL.setPreferredSize(new Dimension(1700, 880));
+        CL.setPreferredSize(new Dimension(1240, 770));
         Window.getContentPane().add(CL, BorderLayout.CENTER);
         JPanel PanelForButtons = new JPanel();
         JButton NewLine = new JButton("Добавить новые прямые");
@@ -142,15 +142,15 @@ public class CrossedLines extends JComponent{
             public void actionPerformed(ActionEvent e) {
                 Color RandomColor = new Color((float) Math.random(), (float) Math.random(), (float) Math.random());
 
-                int x11 = (int) (Math.random() * 1700);
-                int x21 = (int) (Math.random() * 1700);
-                int y11 = (int) (Math.random() * 880);
-                int y21 = (int) (Math.random() * 880);
+                int x11 = (int) (Math.random() * 1240);
+                int x21 = (int) (Math.random() * 1240);
+                int y11 = (int) (Math.random() * 770);
+                int y21 = (int) (Math.random() * 770);
 
-                int x12 = (int) (Math.random() * 1700);
-                int x22 = (int) (Math.random() * 1700);
-                int y12 = (int) (Math.random() * 880);
-                int y22 = (int) (Math.random() * 880);
+                int x12 = (int) (Math.random() * 1240);
+                int x22 = (int) (Math.random() * 1240);
+                int y12 = (int) (Math.random() * 770);
+                int y22 = (int) (Math.random() * 770);
 
                 int a1, a2, b1, b2, c1, c2, d;
                 int xi, yi;
@@ -166,7 +166,7 @@ public class CrossedLines extends JComponent{
                     xi = (b1 * c2 - b2 * c1) / d;
                     yi = (a2 * c1 - a1 * c2) / d;
                     CL.addPoint(xi, yi, 4,4);
-                    if (xi>0&&xi<1700&&yi>0&&yi<880){
+                    if (xi>0&&xi<1240&&yi>0&&yi<770){
                         CL.addDash(x11, y11, x21, y21, RandomColor);
                         CL.addDash(x12, y12, x22, y22, RandomColor);
                     }
